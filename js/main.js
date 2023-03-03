@@ -10,50 +10,55 @@ function showPage() {
 }
 
 // SWIPER
-var swiper = new Swiper('.about-content', {
+var swiper = new Swiper('.reviews-content', {
   slidesPerView: 1,
   spaceBetween: 30,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
-  breakpoints: {
-    640: {
-      slidesPerView: 2,
-      spaceBetween: 15,
-    },
-    768: {
-      slidesPerView: 3,
-      spaceBetween: 15,
-    },
-    1000: {
-      slidesPerView: 4,
-      spaceBetween: 20,
-    },
-  },
-});
+ });
 
 // REVIEWS
-var swiper = new Swiper(".reviews-content", {
-  spaceBetween: 30,
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  },
+var swiper = new Swiper(".about-container", {
+
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
+  breakpoints: {
+    1000: {
+      slidesPerView: 3,
+      spaceBetween: -100,
+    },
+    780: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    734: {
+      slidesPerView: 3,
+      spaceBetween: 150,
+    },
+    600: {
+      slidesPerView: 3,
+      spaceBetween: 200,
+    },
+    500: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    400: {
+      slidesPerView: 2,
+      spaceBetween: 200,
+    },
+    380: {
+      slidesPerView: 1.3,
+      spaceBetween: 20,
+    }
+  }
 });
 
 
 // TRATAMENTOS
-var swiper = new Swiper(".trataments-content", {
-  spaceBetween: 30,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
 
 
