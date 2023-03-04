@@ -19,12 +19,17 @@ var swiper = new Swiper('.reviews-content', {
   },
  });
 
+
 // REVIEWS
 var swiper = new Swiper(".about-container", {
 
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
   breakpoints: {
     1000: {
@@ -51,7 +56,7 @@ var swiper = new Swiper(".about-container", {
       slidesPerView: 2,
       spaceBetween: 200,
     },
-    380: {
+    375: {
       slidesPerView: 1.3,
       spaceBetween: 20,
     }
@@ -60,5 +65,14 @@ var swiper = new Swiper(".about-container", {
 
 
 // TRATAMENTOS
+var swiper = new Swiper('.trataments-content', {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+ });
 
 
+ 

@@ -34,10 +34,23 @@ h2.subtitle {
 }
 
 .btn-primary {
-    color: #f3f3f3;
+    background-color: transparent !important;
+    color: #000000 !important;
     padding: 15px !important;
     margin-bottom: 15px !important;
+    text-transform: uppercase;
+    border: 1px solid #000 !important;
+    border-radius: 3rem;
+    font-weight: 400;
+    text-align: center;
 }
+
+.btn-lg{
+    border: 1px solid #000 !important;
+    border-radius: 3rem;
+    background-color: transparent !important;
+}
+
 
 h2.btn{
     padding: 13.5px !important;
@@ -46,6 +59,8 @@ h2.btn{
 .btn-primary .fa {
     margin-top: 3px !important;
     padding-left: 5px !important;
+    font-weight: 400;
+
 }
 
     
@@ -376,10 +391,12 @@ h2.title {
     width: 250px;
     height: 360px;
     border-radius: 0.5rem;
-    margin-bottom: 10px;
+    margin-bottom: 100px;
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.6);
 
 }
+
+
 
 
 @media screen and (max-width: 760px){
@@ -401,7 +418,6 @@ h2.title {
     width: 100%;
     height: 100%;
     object-fit: cover;
-
 }
 
 .card-btn{
@@ -418,6 +434,10 @@ h2.title {
     transition: 0.5s;
     cursor: pointer;
     opacity: 0;
+}
+
+.card-btn a{
+    color: #000 !important;
 
 }
 
@@ -478,37 +498,6 @@ h2.title {
 .bxl-whatsapp:hover{
     transform: scale(1.1);
     transition: 0.5s;
-}
-
-
-
-.pre-btn,
-.nxt-btn {
-  border: none;
-  width: 10vw;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
-  cursor: pointer;
-  z-index: 8;
-}
-
-.pre-btn {
-  left: 0;
-  transform: rotate(180deg);
-}
-  
-.nxt-btn {
-   right: 0;
-}
-  
-.pre-btn img,
-.nxt-btn img {
-   opacity: 0.2;
 }
 
 
@@ -649,6 +638,7 @@ section.carrer-container .carrer-perfil p {
 }
 
 .trataments h2{
+    text-transform: uppercase;
     font-size: 18px !important;
     color: #9b544c;
 }
@@ -940,7 +930,7 @@ a.email:hover,
     }
 
     section.carrer-container .img-perfil {
-        width: 50%;
+        width: 90%;
         padding-top: 70%;
         display: inline-block;
         height: auto;
@@ -1150,6 +1140,19 @@ a.email:hover,
         font-size: 12px !important;
         padding: 10px !important;
     } */
+
+    .btn-primary{
+        font-size: 14px !important;
+    }
+
+    .btn-2{
+        font-size: 14px !important;
+    }
+
+    .btn-lg{
+        font-size: 19px !important;
+    }
+
     .about-title h2{
         display: flex;
         text-align: center;
