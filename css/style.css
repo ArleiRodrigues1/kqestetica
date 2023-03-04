@@ -252,7 +252,7 @@ h5.offcanvas-title {
     z-index: 1;
     position: relative;
     top: -50px;
-    width: 100%;
+    width: 90% !important;
     height: 90vh !important;
 }
 
@@ -564,7 +564,7 @@ section.carrer-container .img-perfil {
     height: 80%;
     background-size: 100% 100%;
     background-image: url('../img/karol.jpg');
-    margin-bottom: 15px !important;
+    margin-bottom: -5px !important;
 }
 
 section.carrer-container .carrer-perfil {
@@ -878,14 +878,14 @@ a.email:hover,
     }
 
     .home-img img{
-        max-height: 500px !important;
+        height: 300px !important;
     }
 }
 
 @media screen and (max-width: 768px) {
     .home-img img {
-        width: 100% !important;
-        max-height: 50vh !important;
+        width: 90% !important;
+        max-height: 60vh !important;
         position: relative;
         top: 30px;
     }
