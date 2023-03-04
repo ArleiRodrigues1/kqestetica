@@ -33,8 +33,8 @@ var swiper = new Swiper(".about-container", {
   },
   breakpoints: {
     1000: {
-      slidesPerView: 3,
-      spaceBetween: -100,
+      slidesPerView: 4,
+      spaceBetween: 140,
     },
     780: {
       slidesPerView: 3,
@@ -42,7 +42,7 @@ var swiper = new Swiper(".about-container", {
     },
     734: {
       slidesPerView: 3,
-      spaceBetween: 150,
+      spaceBetween: 50,
     },
     600: {
       slidesPerView: 3,
