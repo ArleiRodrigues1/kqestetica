@@ -22,7 +22,7 @@ var swiper = new Swiper('.reviews-content', {
 
 // REVIEWS
 var swiper = new Swiper(".about-container", {
-
+  rewind: true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -32,39 +32,47 @@ var swiper = new Swiper(".about-container", {
     prevEl: ".swiper-button-prev",
   },
   breakpoints: {
-    1000: {
-      slidesPerView: 4,
-      spaceBetween: 140,
-    },
-    1480: {
-      slidesPerView: 3,
-      spaceBetween: -400,
-    },
-    780: {
-      slidesPerView: 3,
-      spaceBetween: 20,
-    },
-    734: {
-      slidesPerView: 3,
+    375: {
+      slidesPerView: 1.5,
       spaceBetween: 50,
     },
-    600: {
+    390: {
+      slidesPerView: 1.5,
+      spaceBetween: 50,
+    },
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 60,
+    },
+    768: {
       slidesPerView: 3,
-      spaceBetween: 200,
+      spaceBetween: 140,
     },
-    500: {
-      slidesPerView: 2,
-      spaceBetween: 20,
+    996: {
+      slidesPerView: 4,
+      spaceBetween: 180,
     },
-    400: {
-      slidesPerView: 2,
-      spaceBetween: 200,
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 150,
     },
-    375: {
-      slidesPerView: 1.3,
-      spaceBetween: 20,
-    }
-  }
+    1480: {
+      slidesPerView: 5,
+      spaceBetween: 50,
+    },
+    1460: {
+      slidesPerView: 5,
+      spaceBetween: 50,
+    },
+    1300: {
+      slidesPerView: 4,
+      spaceBetween: 50,
+    },
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 50,
+    },
+  },
 });
 
 

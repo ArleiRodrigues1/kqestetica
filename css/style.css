@@ -375,16 +375,17 @@ h2.title {
 .product{
     position: relative;
     overflow: hidden;
-
 }
 
 .about h2.title{
     font-size: 15px !important;
 }
 
-.about-container{
-    display: flex;
+.swiper-slide .last-card{
+    margin-right: 150px !important;
+    height: 1px !important;
 }
+
 
 .about-card{
     flex: 0 0 auto;
@@ -393,16 +394,14 @@ h2.title {
     border-radius: 0.5rem;
     margin-bottom: 100px;
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.6);
+    z-index: 00 !important;
 
 }
-
-
-
-
-@media screen and (max-width: 760px){
-    .about-card .last-card{
-        margin-left: 2500px !important;
-    }
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 
@@ -410,7 +409,6 @@ h2.title {
     position: relative;
     width: 100%;
     height: 300px;
-    overflow: hidden;
     border-radius: 0.5rem 0.5rem 0 0;
 }
 
@@ -418,6 +416,8 @@ h2.title {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    z-index: 00 !important;
+
 }
 
 .card-btn{
@@ -452,6 +452,8 @@ h2.title {
 
 .about-info{
     padding-top: 10px;
+    z-index: 00 !important;
+
 }
 
 .about-description{
@@ -461,6 +463,8 @@ h2.title {
     overflow: hidden;
     opacity: 0.5;
     margin: 5px 0;
+    z-index: 00 !important;
+
 }
 
 .price{
@@ -469,6 +473,8 @@ h2.title {
     position: relative;
     left: -54px;
     top: -14px !important;
+    z-index: 00 !important;
+
 
 }
 
@@ -476,6 +482,8 @@ h2.title {
     color: #000;
     font-size: 20px;
     margin-left: -50px;
+    z-index: 00 !important;
+
     margin-right: 40px ;
 }
 
@@ -483,6 +491,8 @@ h2.title {
    position: relative;
    left: 60px !important;
    bottom: 15px !important;
+   z-index: 00 !important;
+
 }
 
 
@@ -500,6 +510,29 @@ h2.title {
     transition: 0.5s;
 }
 
+.swiper-button-next,
+.swiper-button-prev{
+    background: transparent !important;
+    color: white !important;
+    width: 50px !important;
+    border-radius: 50%;
+    display: flex !important;
+    justify-items: center !important;
+    justify-content: center !important;
+    margin: -80px -8px !important;
+    z-index: 40000 !important;
+    position:absolute !important;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover{
+    background-color: var(--primary-color);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after{
+    font-size: 16px !important;
+}
 
 
 /* CARRER */
@@ -930,7 +963,7 @@ a.email:hover,
     }
 
     section.carrer-container .img-perfil {
-        width: 90%;
+        width: 60%;
         padding-top: 70%;
         display: inline-block;
         height: auto;
